@@ -92,10 +92,24 @@ body {
     display: flex;
     gap: 2em; }
   .header__link {
-    display: inline-block; }
+    display: inline-block;
+    position: relative; }
+    .header__link:after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      height: 2px;
+      opacity: 0;
+      transition: 0.6s; }
     .header__link a {
       font-weight: 500;
       color: #fff; }
+    .header__link:hover:after {
+      opacity: 1;
+      transition: 0.6s; }
 
 .main-page {
   min-height: 100vh;
@@ -127,7 +141,11 @@ body {
   border-radius: 5px;
   font-size: 18px;
   color: #fff;
-  display: inline-block; }
+  display: inline-block;
+  transition: 0.6s; }
+  .button1:hover {
+    background: #427A29;
+    transition: 0.6s; }
 
 .button2 {
   padding: 0.8rem 1.5rem;
@@ -138,7 +156,11 @@ body {
   display: inline-block;
   white-space: nowrap;
   font-weight: 600;
-  border: 1px solid #539833; }
+  border: 1px solid #539833;
+  transition: 0.6s; }
+  .button2:hover {
+    background: #E8F2E3;
+    transition: 0.6s; }
 
 .about__content {
   display: flex; }
@@ -152,7 +174,7 @@ body {
   margin-top: 20px; }
 
 .title1 {
-  margin: 7.5rem 0 3.75rem 0;
+  padding: 7.5rem 0 3.75rem 0;
   font-size: 40px;
   font-weight: 600;
   text-align: center; }
@@ -174,7 +196,9 @@ body {
 
 .bike-models__item {
   padding: 1rem;
-  flex: 0 1 33.333%; }
+  flex: 0 1 33.333%;
+  display: flex;
+  flex-direction: column; }
 
 .bike-models__img img {
   width: 100%; }
@@ -184,7 +208,8 @@ body {
   font-size: 24px;
   font-weight: 600;
   text-align: center;
-  line-height: 150%; }
+  line-height: 150%;
+  flex: 1 1 auto; }
 
 .bike-models__capabilities {
   display: flex;
@@ -220,7 +245,11 @@ body {
   padding: 0.75rem 1rem;
   border-radius: 5px;
   margin-top: 3rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  transition: 0.6s; }
+  .bike-models__readMoreButton:hover {
+    background: #E8F2E3;
+    transition: 0.6s; }
 
 .title2 {
   font-weight: 600;
@@ -372,6 +401,8 @@ body {
   .footer__list {
     display: flex;
     gap: 2rem; }
+  .footer__link::hover {
+    filter: hue-rotate(120deg); }
   .footer__links {
     display: flex;
     gap: 10px; }
@@ -404,9 +435,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+  .cookie-banner__accept-button {
+    text-align: center;
+    padding: 1rem 2rem;
+    background: #539833; }
   .cookie-banner__close-button {
     margin-left: 27px;
-    background: none;
     border: none;
     font-size: 2.8rem;
     cursor: pointer; }
@@ -447,8 +481,8 @@ body {
         color: #fff;
         font-size: 1.6vw; }
   .title1 {
-    margin-top: 5rem;
-    margin-bottom: 3rem; }
+    padding-top: 5rem;
+    padding-bottom: 3rem; }
   .footer__link a {
     font-size: 1.5vw; }
   .swiper-slide {
@@ -467,8 +501,10 @@ body {
     font-size: 2rem; }
   .title2 {
     font-size: 1.5rem; }
-  .main-page__title {
-    font-size: 2.75rem; }
+  .main-page {
+    background-position: 50%; }
+    .main-page__title {
+      font-size: 2.75rem; }
   .header {
     top: 0;
     padding: 15px 0; }
@@ -510,6 +546,8 @@ body {
         display: none; }
     .header__link a {
       font-size: 1rem; }
+    .header__link:after {
+      height: 0; }
     .header__list {
       display: flex;
       flex-direction: column;
@@ -626,13 +664,72 @@ body {
     position: relative;
     left: 0; } }
 
+.arrow-up {
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  z-index: 30;
+  padding: 14px;
+  border-radius: 50%;
+  background-color: #171624;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+  opacity: 0;
+  z-index: 999; }
+
 @media (max-width: 590px) {
+  .cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 2vh 0;
+    z-index: 100; }
+    .cookie-banner p {
+      font-size: 3vw; }
+    .cookie-banner__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .cookie-banner__accept-button {
+      text-align: center;
+      padding: 0.7rem 1.1rem;
+      background: #539833;
+      font-size: 4vw; }
+    .cookie-banner__close-button {
+      color: transparent;
+      position: relative;
+      margin-left: 1rem;
+      cursor: pointer; }
+      .cookie-banner__close-button::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        top: 50%;
+        left: 0;
+        background: #000;
+        z-index: 999;
+        transform: rotate(45deg); }
+      .cookie-banner__close-button::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        top: 50%;
+        left: 0;
+        background: #000;
+        z-index: 999;
+        transform: rotate(-45deg); }
   .contacts__address span, .contacts__tel span {
     font-size: 4vw; }
   .contacts__address p, .contacts__tel p {
     font-size: 5vw; }
   .main-page__button {
-    font-size: 4vw; }
+    font-size: 3.5vw; }
   .footer__wrapper {
     justify-content: space-around; }
   .footer__links {
