@@ -59,7 +59,7 @@ body{
 	}
 	
 	
-	&_logo {}
+	
 	&__menu {}
 	&__list {
 		display: flex;
@@ -67,11 +67,28 @@ body{
 	}
 	&__link {
 		display: inline-block;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			width: 100%;
+			background: #fff;
+			height: 2px;
+			opacity: 0;
+			transition:0.6s;
+		}
 		& a{
 			font-weight: 500;
 			color: #fff;
 		}
-		
+		&:hover{
+		&:after{
+			opacity: 1;
+			transition:0.6s;
+		}
+	}
 	}
 	&__button {}
 }
@@ -113,6 +130,11 @@ body{
 	font-size: 18px;
 	color: #fff;
 	display: inline-block;
+	transition:0.6s;
+	&:hover{
+		background:#427A29;
+		transition:0.6s;
+	}
 }
 .button2 {
 	padding: 0.8rem 1.5rem;
@@ -124,6 +146,11 @@ body{
 	white-space: nowrap;
 	font-weight: 600;
 	border: 1px solid #539833;
+	transition:0.6s;
+	&:hover{
+		background:#E8F2E3;
+		transition:0.6s;
+	}
 }
 
 
@@ -149,7 +176,7 @@ body{
 	&__img {}
 }
 .title1 {
-	margin: rem(120px) 0 rem(60px) 0 ;
+	padding: rem(120px) 0 rem(60px) 0 ;
 	font-size: 40px;
 	font-weight: 600;
 	text-align: center;
@@ -182,6 +209,8 @@ body{
 	&__item {
 		padding: 1rem;
 		flex: 0 1 33.333%;
+		display: flex;
+		flex-direction: column;
 	}
 	&__item-hidden {
 		
@@ -200,11 +229,13 @@ body{
 		font-weight: 600;
 		text-align: center;
 		line-height: 150%;
+		flex: 1 1 auto;
 	}
 	&__capabilities {
 		display: flex;
 		flex-direction:column;
 		gap: 8px;
+		
 	}
 	&__capability {
 		display: flex;
@@ -236,6 +267,11 @@ body{
 		border-radius: 5px;
 		margin-top: 3rem;
 		margin-bottom: 3rem;
+		transition: 0.6s;
+		&:hover{
+		background:#E8F2E3;
+		transition:0.6s;
+	}
 	}
 }
 
@@ -471,10 +507,15 @@ body{
 		display: flex;
 		gap: 2rem;
 	}
-	&__link {}
+	&__link{
+		&::hover{
+			filter: hue-rotate(120deg);
+		}
+	}
 	&__links {
 		display: flex;
 		gap: 10px;
+		
 	}
 	&__rights{
 		
@@ -514,10 +555,16 @@ body{
   	justify-content: space-between;
   	align-items: center;
   }
-
+  &__accept-button{
+  	text-align: center;
+  	padding: 1rem 2rem;
+  	background: #539833;
+  }
   &__close-button{
+  	
+  	
   	margin-left: 27px;
-  	background: none;
+ 
    border: none;
    font-size: 2.8rem;
    cursor: pointer;
@@ -579,8 +626,8 @@ body{
 
 
 	.title1{
-		margin-top: rem(80px);
-		margin-bottom: rem(48px);
+		padding-top: rem(80px);
+		padding-bottom: rem(48px);
 	}
 	.footer__link a{
 		font-size: 1.5vw;
@@ -618,6 +665,7 @@ body{
 	}
 
 	.main-page{
+		background-position: 50%;
 		&__title{
 			font-size: rem(44px);
 		}
@@ -675,6 +723,11 @@ body{
 	&__link a{
 		font-size: 1rem;
 	}
+	&__link{
+		&:after{
+			height: 0;
+		}
+	}
 	&__list{
 		display: flex;
 		flex-direction: column;
@@ -682,6 +735,7 @@ body{
 		padding: 0 3vw 0 0.4rem;
 	}
 	&__menu{
+		
 				position: absolute;	
 
 				transition: 0.5s;
@@ -873,8 +927,74 @@ body{
 	}
 }
 
-
+.arrow-up {
+   position: fixed;
+   bottom: 10%;
+   right: 10%;
+   z-index: 30;
+   padding: 14px;
+   border-radius: 50%;
+   background-color: #171624;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: background-color 0.3s;
+   opacity: 0;
+   z-index: 999;
+}
 @media (max-width: 590px) {
+	.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 2vh 0;
+  z-index: 100;
+  & p{
+  	font-size: 3vw;
+  }
+  &__wrapper{
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  }
+  &__accept-button{
+  	text-align: center;
+  	padding: 0.7rem 1.1rem;
+  	background: #539833;
+  	font-size: 4vw;
+  }
+  &__close-button{
+  	color: transparent;
+  	position: relative;
+  	margin-left: 1rem;
+   
+   cursor: pointer;
+   &::before{
+   	content: "";
+   	position: absolute;
+   	width: 30px;
+   	height: 2px;
+   	top: 50%;
+   	left: 0;
+   	background: #000;
+   	z-index: 999;
+   	transform: rotate(45deg);
+   }
+    &::after{
+   	content: "";
+   	position: absolute;
+   	width: 30px;
+   	height: 2px;
+   	top: 50%;
+   	left: 0;
+   	background: #000;
+   	z-index: 999;
+   	transform: rotate(-45deg);
+   }
+}
+}
 	.contacts{
 		&__address, &__tel{
 			& span{
@@ -888,7 +1008,7 @@ body{
 	}
 	.main-page{
 		&__button{
-			font-size: 4vw;
+			font-size: 3.5vw;
 		}
 	}
 	.footer{
