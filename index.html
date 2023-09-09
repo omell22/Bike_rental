@@ -25,7 +25,7 @@
 </head>
 
 <body>
-   <div class="wrapper">
+   <div class="wrapper" id="header">
       <div class="cookie-banner" id="cookieBanner">
          <div class="container">
             <div class="cookie-banner__wrapper">
@@ -36,9 +36,12 @@
             </div>
          </div>
       </div>
+      <a href="#header" class="arrow-up">
+         <img src="img/Arrow-UP.png" alt="UP">
+      </a>
       <header class="header">
          <div class="header__container container">
-            <div class="header_logo">
+            <div class="header__logo">
                <img src="img/Frame 14.png" alt="">
             </div>
             <div class="header__burger">
@@ -46,678 +49,660 @@
             </div>
             <div class="header__menu">
                <ul class="header__list">
-                  <li class="header__link"><a href="">Про нас</a></li>
-                  <li class="header__link"><a href="">Моделі велосипедів</a></li>
-                  <li class="header__link"><a href="">Умови прокату</a></li>
+                  <li class="header__link"><a href="#about">Про нас</a></li>
+                  <li class="header__link"><a href="#models">Моделі велосипедів</a></li>
+                  <li class="header__link"><a href="#conditions">Умови прокату</a></li>
                   <li class="header__link"><a href="">Прогноз погоди</a></li>
-                  <li class="header__link"><a href="">Контакти</a></li>
+                  <li class="header__link"><a href="#contacts">Контакти</a></li>
                   <a class="header__mobile-button button1" href="">Зарезервувати</a>
                </ul>
             </div>
             <a href="" class="header__button button1">Зарезервувати</a>
          </div>
       </header>
-      <main class="main">
-         <section class="main-page">
-            <div class="container">
-               <div class="main-page__info">
-                  <div class="main-page__title">ВелоПрокат</div>
-                  <div class="main-page__subtitle">Головний наш принцип - ми не просто продаємо велики, ми ними живемо
-                  </div>
-                  <div class="main-page__buttons">
-                     <a href="" class="main-page__button button1">Зарезервувати</a>
-                     <a href="" class="main-page__button button2">Дізнатись більше</a>
-                  </div>
-               </div>
-            </div>
-         </section>
+      <div class="main-page">
          <div class="container">
-            <section class="about">
-               <div class="about__title title1">Про нас</div>
-               <div class="about__content">
-                  <div class="about__info">
-                     <div class="about__text">Наш сервіс Велопрокат велотоварів, який надає якісні продукти та
-                        приправляє
-                        це все якісним сервісом. Ми працюємо над цим щодня. Наш асортимент дозволяє підібрати необхідний
-                        товар для будь-якого велосипедиста. І за кожного із наших клієнтів ми переживаємо. Ми вже
-                        змінили
-                        на краще погляд українців на рівень сервісу у сфері прокату велосипедів, а тепер налаштовані
-                        показати, що купити велосипед та велоаксесуари в Україні можна зручно, швидко та комфортно. Наша
-                        команда зростає і розвивається, навчаємося щодня, переймаємо досвід – загалом робимо все, щоб
-                        стати
-                        ще ближчим до вас.
-                        Асортимент дозволяє вибрати комфортний чоловічий, жіночий, із заниженою рамою, дитячий або
-                        підлітковий велосипед будь-якого дизайну.
-                        Для зручності, наш сервіс доступний в онлайн та офлайн форматі. Ви можете не виходячи з дому
-                        оформити замовлення на сайті або отримати консультацію в магазині, де досвідчені консультанти
-                        підберуть потрібну модель.
-                     </div>
-                     <a href="" class="about__button button2">Дивитись більше</a>
-                  </div>
-                  <div class="about__img"><img src="img/Container.svg" alt=""></div>
+            <div class="main-page__info">
+               <div class="main-page__title">ВелоПрокат</div>
+               <div class="main-page__subtitle">Головний наш принцип - ми не просто продаємо велики, ми ними живемо
                </div>
-            </section>
-            <section class="bike-models">
-               <div class="bike-models__title title1">Моделі велосипедів</div>
-               <div class="bike-models__model">
-                  <div class="bike-models__subtitle title2">Електросамокати та електроскутери</div>
-                  <div class="bike-models__text">Якщо вам потрібний компактний та легкий транспорт для пересування в
-                     межах
-                     25–35 км, вибирайте електросамокат.</div>
-                  <div class="bike-models__items">
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                  </div>
-                  <div class="bike-models__items bike-models__items-hidden">
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                  </div>
-                  <a href="" class="bike-models__readMoreButton">Дивитись більше</a>
+               <div class="main-page__buttons">
+                  <a href="" class="main-page__button button1">Зарезервувати</a>
+                  <a href="" class="main-page__button button2">Дізнатись більше</a>
                </div>
-               <div class="bike-models__model">
-                  <div class="bike-models__subtitle title2">Електросамокати та електроскутери</div>
-                  <div class="bike-models__text">Якщо вам потрібний компактний та легкий транспорт для пересування в
-                     межах
-                     25–35 км, вибирайте електросамокат.</div>
-                  <div class="bike-models__items">
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                  </div>
-                  <div class="bike-models__items bike-models__items-hidden">
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                  </div>
-                  <a href="" class="bike-models__readMoreButton">Дивитись більше</a>
-               </div>
-               <div class="bike-models__model">
-                  <div class="bike-models__subtitle title2">Електросамокати та електроскутери</div>
-                  <div class="bike-models__text">Якщо вам потрібний компактний та легкий транспорт для пересування в
-                     межах
-                     25–35 км, вибирайте електросамокат.</div>
-                  <div class="bike-models__items">
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                  </div>
-                  <div class="bike-models__items bike-models__items-hidden">
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                  </div>
-                  <a href="" class="bike-models__readMoreButton">Дивитись більше</a>
-               </div>
-               <div class="bike-models__model">
-                  <div class="bike-models__subtitle title2">Електросамокати та електроскутери</div>
-                  <div class="bike-models__text">Якщо вам потрібний компактний та легкий транспорт для пересування в
-                     межах
-                     25–35 км, вибирайте електросамокат.</div>
-                  <div class="bike-models__items">
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                  </div>
-                  <div class="bike-models__items bike-models__items-hidden">
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                     <div class="bike-models__item">
-                        <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
-                        <div class="bike-models__name">Электросамокат Razor Powe</div>
-                        <div class="bike-models__capabilities">
-                           <div class="bike-models__capability">
-                              <p>Тип:</p>
-                              <p>Класичний</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Швидкість:</p>
-                              <p>16 км/год</p>
-                           </div>
-                           <div class="bike-models__capability">
-                              <p>Двигун:</p>
-                              <p>22 В, 130 Вт</p>
-                           </div>
-                        </div>
-                        <a href="" class="bike-models__button button1">Зарезервувати</a>
-                     </div>
-                  </div>
-                  <a href="" class="bike-models__readMoreButton">Дивитись більше</a>
-               </div>
-            </section>
-            <section class="conditions">
-               <div class="conditions__title title1">Умови прокату</div>
-               <div class="conditions__text">Для того, щоб отримати велосипед в прокат, необхідно залишити депозит у
-                  розмірі мінімум 500 грн, а також документ, що засвідчує особу. Таким документів може бути водійські
-                  права, студентський квиток.В якості альтернативи ви також можете залишити в заставу інший документ,
-                  але у
-                  цьому випадку грошова застава складає 1500 грн. При відсутності документів в заставу береться повна
-                  вартість велосипеда або ж, за погодженням з менеджером пункту прокату, будь-яка цінна річ (телефон,
-                  планшет, ноутбук).
-               </div>
-               <div class="conditions__list">
-                  <div class="conditions__list-title">Увага!</div>
-                  <div class="conditions__list-subtitle">Ми залишаємо за собою право відмовити в видачі велосипеда в
-                     прокат
-                     при:
-                  </div>
-                  <ul>
-                     <li class="conditions__link">– сумніві в правдивості документів;– особам, що не досягли 18-річчя;
-                     </li>
-                     <li class="conditions__link">– особам в явному алкогольному або наркотичному сп’янінні й т.і.;</li>
-                     <li class="conditions__link">– менеджер пункту прокату має право відмовити у видачі техніки без
-                        пояснення причини відмови.</li>
-                  </ul>
-                  <p>При оренді велосипеда у нас Ви отримуєте безкоштовно шолом і замок (при необхідності).</p>
-               </div>
-            </section>
-            <section class="comments">
-               <div class="comments__title title1">Відгуки</div>
-               <div class="comments__slider swiper-container">
-                  <div class="comments__wrapper swiper-wrapper">
-                     <div class="comments__comment swiper-slide">
-                        <div class="comments__rate">
-                           <img src="img/Rating.png" alt="">
-                        </div>
-                        <div class="comments__text">Все гармата-ракета, роблять сервіс і ТО якісно, уважно та
-                           відповідально, чітко-в ті терміни, які сказали (часто в той же день і забирав з ремки вів)
-                        </div>
-                        <div class="comments__author">John Carter</div>
-                     </div>
-                     <div class="comments__comment swiper-slide">
-                        <div class="comments__rate">
-                           <img src="img/Rating.png" alt="">
-                        </div>
-                        <div class="comments__text">Все гармата-ракета, роблять сервіс і ТО якісно, уважно та
-                           відповідально, чітко-в ті терміни, які сказали (часто в той же день і забирав з ремки вів)
-                           Все
-                           гармата-ракета, роблять сервіс і ТО якісно, уважно та відповідально, чітк</div>
-                        <div class="comments__author">John Carter</div>
-                     </div>
-                     <div class="comments__comment swiper-slide">
-                        <div class="comments__rate">
-                           <img src="img/Rating.png" alt="">
-                        </div>
-                        <div class="comments__text">Все гармата-ракета, роблять сервіс і ТО якісно, уважно та
-                           відповідально, чітко-в ті терміни, які сказали (часто в той же день і забирав з ремки вів)
-                        </div>
-                        <div class="comments__author">John Carter</div>
-                     </div>
-                     <div class="comments__comment swiper-slide">
-                        <div class="comments__rate">
-                           <img src="img/Rating.png" alt="">
-                        </div>
-                        <div class="comments__text">Все гармата-ракета, роблять сервіс і ТО якісно, уважно та
-                           відповідально, чітко-в ті терміни, які сказали (часто в той же день і забирав з ремки вів)
-                        </div>
-                        <div class="comments__author">John Carter</div>
-                     </div>
-                     <div class="comments__comment swiper-slide">
-                        <div class="comments__rate">
-                           <img src="img/Rating.png" alt="">
-                        </div>
-                        <div class="comments__text">Все гармата-ракета, роблять сервіс і ТО якісно, уважно та
-                           відповідально, чітко-в ті терміни, які сказали (часто в той же день і забирав з ремки вів)
-                        </div>
-                        <div class="comments__author">John Carter</div>
-                     </div>
-
-                  </div>
-                  <div class="swiper-pagination"></div>
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
-               </div>
-            </section>
+            </div>
          </div>
-         <section class="contacts">
-            <div class="contacts__title title1">Контакти</div>
-            <form class="form" action="">
-               <div class="form__title">Зв'яжіться з нами</div>
-               <div class="form__subtitle">Ми хочемо почути від вас</div>
-               <input type="text" placeholder="Ім'я">
-               <input type="text" placeholder="Email">
-               <textarea placeholder="Введіть своє повідомлення тут"></textarea>
-               <button type="submit" class="form__button button1">Відправити</button>
-            </form>
-            <div class="contacts__bg">
-
-            </div>
-
-            <div class="contacts__contact">
-               <div class="contacts__wrapper container">
-                  <div class="contacts__address">
-                     <p>Завітайте до нас</p>
-                     <span>58 Middle Point Rd</span>
-                     <span>San Francisco, 94124</span>
+      </div>
+      <div class="container">
+         <div id="about" class="about">
+            <div class="about__title title1">Про нас</div>
+            <div class="about__content">
+               <div class="about__info">
+                  <div class="about__text">Наш сервіс Велопрокат велотоварів, який надає якісні продукти та приправляє
+                     це все якісним сервісом. Ми працюємо над цим щодня. Наш асортимент дозволяє підібрати необхідний
+                     товар для будь-якого велосипедиста. І за кожного із наших клієнтів ми переживаємо. Ми вже змінили
+                     на краще погляд українців на рівень сервісу у сфері прокату велосипедів, а тепер налаштовані
+                     показати, що купити велосипед та велоаксесуари в Україні можна зручно, швидко та комфортно. Наша
+                     команда зростає і розвивається, навчаємося щодня, переймаємо досвід – загалом робимо все, щоб стати
+                     ще ближчим до вас.
+                     Асортимент дозволяє вибрати комфортний чоловічий, жіночий, із заниженою рамою, дитячий або
+                     підлітковий велосипед будь-якого дизайну.
+                     Для зручності, наш сервіс доступний в онлайн та офлайн форматі. Ви можете не виходячи з дому
+                     оформити замовлення на сайті або отримати консультацію в магазині, де досвідчені консультанти
+                     підберуть потрібну модель.
                   </div>
-                  <div class="contacts__tel">
-                     <p>Зв'яжіться з нами</p>
-                     <span>(123) 456 - 789</span>
-                     <span>(123) 456 - 789</span>
-                     <span>contact@company.com</span>
+                  <a href="" class="about__button button2">Дивитись більше</a>
+               </div>
+               <div class="about__img"><img src="img/Container.svg" alt=""></div>
+            </div>
+         </div>
+         <div class="bike-models" id="models">
+            <div class="bike-models__title title1">Моделі велосипедів</div>
+            <div class="bike-models__model">
+               <div class="bike-models__subtitle title2">Електросамокати та електроскутери</div>
+               <div class="bike-models__text">Якщо вам потрібний компактний та легкий транспорт для пересування в межах
+                  25–35 км, вибирайте електросамокат.</div>
+               <div class="bike-models__items">
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
+                     <div class="bike-models__name">Электросамокат Razor Powe</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Класичний</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Швидкість:</p>
+                           <p>16 км/год</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Двигун:</p>
+                           <p>22 В, 130 Вт</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2 (5).png" alt=""></div>
+                     <div class="bike-models__name">Электросамокат OIO RT </div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>З сидінням</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Швидкість:</p>
+                           <p>30 км/год</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Двигун:</p>
+                           <p>250 Вт</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2 (6).png" alt=""></div>
+                     <div class="bike-models__name">Электросамокат like.BIKE TWIST</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Класичний</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Швидкість:</p>
+                           <p>16 км/год</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Двигун:</p>
+                           <p>22 В, 130 Вт</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
                   </div>
                </div>
+               <div class="bike-models__items bike-models__items-hidden">
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
+                     <div class="bike-models__name">Электросамокат Razor Powe</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Класичний</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Швидкість:</p>
+                           <p>16 км/год</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Двигун:</p>
+                           <p>22 В, 130 Вт</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
+                     <div class="bike-models__name">Электросамокат Razor Powe</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Класичний</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Швидкість:</p>
+                           <p>16 км/год</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Двигун:</p>
+                           <p>22 В, 130 Вт</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
+                     <div class="bike-models__name">Электросамокат Razor Powe</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Класичний</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Швидкість:</p>
+                           <p>16 км/год</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Двигун:</p>
+                           <p>22 В, 130 Вт</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+               </div>
+               <a href="" class="bike-models__readMoreButton">Дивитись більше</a>
+            </div>
+            <div class="bike-models__model">
+               <div class="bike-models__subtitle title2">Міські велосипеди</div>
+               <div class="bike-models__text">Міські велосипеди - це практичність і краса. Крила і захист одягу від ланцюгу, багажник, корзина на кермі, підніжка, ліхтарики і габарити - все це органічно поєднується в класичному міському велосипеді.</div>
+               <div class="bike-models__items">
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2 (7).png" alt=""></div>
+                     <div class="bike-models__name">Велосипед Trinx Cute 3.0</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Міський</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Розмір рами:</p>
+                           <p>15"</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Для кого:</p>
+                           <p>Жіночий</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2 (8).png" alt=""></div>
+                     <div class="bike-models__name">Велосипед Dorozhnik ONYX </div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Міський</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Розмір рами:</p>
+                           <p>12,5"</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Для кого:</p>
+                           <p>Унісекс</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2 (9).png" alt=""></div>
+                     <div class="bike-models__name">Велосипед Dorozhnik CORAL </div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Міський</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Розмір рами:</p>
+                           <p>19"</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Для кого:</p>
+                           <p>Унісекс</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+               </div>
+               <div class="bike-models__items bike-models__items-hidden">
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
+                     <div class="bike-models__name">Электросамокат Razor Powe</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Класичний</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Швидкість:</p>
+                           <p>16 км/год</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Двигун:</p>
+                           <p>22 В, 130 Вт</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
+                     <div class="bike-models__name">Электросамокат Razor Powe</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Класичний</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Швидкість:</p>
+                           <p>16 км/год</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Двигун:</p>
+                           <p>22 В, 130 Вт</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
+                     <div class="bike-models__name">Электросамокат Razor Powe</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Класичний</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Швидкість:</p>
+                           <p>16 км/год</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Двигун:</p>
+                           <p>22 В, 130 Вт</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+               </div>
+               <a href="" class="bike-models__readMoreButton">Дивитись більше</a>
+            </div>
+            <div class="bike-models__model">
+               <div class="bike-models__subtitle title2">Гірські велосипеди</div>
+               <div class="bike-models__text">Гірський велосипед - велосипед, призначений для катання поза дорогами (хоч і не виключає зворотного), і внаслідок цього має особливу конструкцію, відмінну від шосейного, трекового та дорожнього (міського) велосипедів.</div>
+               <div class="bike-models__items">
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2 (10).png" alt=""></div>
+                     <div class="bike-models__name">Велосипед Pride STELLA</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Гірський</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Розмір рами:</p>
+                           <p>S</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Для кого:</p>
+                           <p>Жіночий</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2 (11).png" alt=""></div>
+                     <div class="bike-models__name">Велосипед Discovery BASTION</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Гірський</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Розмір рами:</p>
+                           <p>19"</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Для кого:</p>
+                           <p>Чоловічий</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2 (12).png" alt=""></div>
+                     <div class="bike-models__name">Велосипед Pride MARVEL</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Гірський</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Розмір рами:</p>
+                           <p>L</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Для кого:</p>
+                           <p>Чоловічий</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+               </div>
+               <div class="bike-models__items bike-models__items-hidden">
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
+                     <div class="bike-models__name">Электросамокат Razor Powe</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Гірський</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Розмір рами:</p>
+                           <p>16"</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Для кого:</p>
+                           <p>Жіночий</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
+                     <div class="bike-models__name">Электросамокат Razor Powe</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Гірський</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Розмір рами:</p>
+                           <p>One size</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Для кого:</p>
+                           <p>Жіночий</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
+                     <div class="bike-models__name">Электросамокат Razor Powe</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Гірський</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Розмір рами:</p>
+                           <p>One size</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Для кого:</p>
+                           <p>Жіночий</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+               </div>
+               <a href="" class="bike-models__readMoreButton">Дивитись більше</a>
+            </div>
+            <div class="bike-models__model">
+               <div class="bike-models__subtitle title2">Ексклюзивні велосипеди</div>
+               <div class="bike-models__text">Ексклюзивні велосипеди - це велосипеди для тих, хто їздить асфальтом і грунтом приблизно порівну. Такі люди не хочуть шосейного, міського чи гірського велосипеда, а хочуть щось середнє.</div>
+               <div class="bike-models__items">
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2 (13).png" alt=""></div>
+                     <div class="bike-models__name">ВЕЛОСИПЕД  TANDEM DUETTO </div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Круїзні</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Розмір рами:</p>
+                           <p>16"</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Для кого:</p>
+                           <p>Унісекс</p>
+                        </div>
+                     </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2 (14).png" alt=""></div>
+                     <div class="bike-models__name">Велосипед cruise G3</div>
+                    <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Пасажирський</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Розмір рами:</p>
+                           <p>One size</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Для кого:</p>
+                           <p>Жіночий</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2 (16).png" alt=""></div>
+                     <div class="bike-models__name">Велосипед  Pride MINI</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Складаний</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Розмір рами:</p>
+                           <p>One size</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Для кого:</p>
+                           <p>Унісекс</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+               </div>
+               <div class="bike-models__items bike-models__items-hidden">
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
+                     <div class="bike-models__name">Электросамокат Razor Powe</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Класичний</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Швидкість:</p>
+                           <p>16 км/год</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Двигун:</p>
+                           <p>22 В, 130 Вт</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
+                     <div class="bike-models__name">Электросамокат Razor Powe</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Класичний</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Швидкість:</p>
+                           <p>16 км/год</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Двигун:</p>
+                           <p>22 В, 130 Вт</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+                  <div class="bike-models__item">
+                     <div class="bike-models__img"><img src="img/Rectangle 2.svg" alt=""></div>
+                     <div class="bike-models__name">Электросамокат Razor Powe</div>
+                     <div class="bike-models__capabilities">
+                        <div class="bike-models__capability">
+                           <p>Тип:</p>
+                           <p>Класичний</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Швидкість:</p>
+                           <p>16 км/год</p>
+                        </div>
+                        <div class="bike-models__capability">
+                           <p>Двигун:</p>
+                           <p>22 В, 130 Вт</p>
+                        </div>
+                     </div>
+                     <a href="" class="bike-models__button button1">Зарезервувати</a>
+                  </div>
+               </div>
+               <a href="" class="bike-models__readMoreButton">Дивитись більше</a>
+            </div>
+         </div>
+         <div class="conditions" id="conditions">
+            <div class="conditions__title title1">Умови прокату</div>
+            <div class="conditions__text">Для того, щоб отримати велосипед в прокат, необхідно залишити депозит у
+               розмірі мінімум 500 грн, а також документ, що засвідчує особу. Таким документів може бути водійські
+               права, студентський квиток.В якості альтернативи ви також можете залишити в заставу інший документ, але у
+               цьому випадку грошова застава складає 1500 грн. При відсутності документів в заставу береться повна
+               вартість велосипеда або ж, за погодженням з менеджером пункту прокату, будь-яка цінна річ (телефон,
+               планшет, ноутбук).
+            </div>
+            <div class="conditions__list">
+               <div class="conditions__list-title">Увага!</div>
+               <div class="conditions__list-subtitle">Ми залишаємо за собою право відмовити в видачі велосипеда в прокат
+                  при:
+               </div>
+               <ul>
+                  <li class="conditions__link">– сумніві в правдивості документів;– особам, що не досягли 18-річчя;</li>
+                  <li class="conditions__link">– особам в явному алкогольному або наркотичному сп’янінні й т.і.;</li>
+                  <li class="conditions__link">– менеджер пункту прокату має право відмовити у видачі техніки без
+                     пояснення причини відмови.</li>
+               </ul>
+               <p>При оренді велосипеда у нас Ви отримуєте безкоштовно шолом і замок (при необхідності).</p>
+            </div>
+         </div>
+         <div class="comments">
+            <div class="comments__title title1">Відгуки</div>
+            <div class="comments__slider swiper-container">
+               <div class="comments__wrapper swiper-wrapper">
+                  <div class="comments__comment swiper-slide">
+                     <div class="comments__rate">
+                        <img src="img/Rating.png" alt="">
+                     </div>
+                     <div class="comments__text">Все гармата-ракета, роблять сервіс і ТО якісно, уважно та
+                        відповідально, чітко-в ті терміни, які сказали (часто в той же день і забирав з ремки вів)</div>
+                     <div class="comments__author">John Carter</div>
+                  </div>
+                  <div class="comments__comment swiper-slide">
+                     <div class="comments__rate">
+                        <img src="img/Rating.png" alt="">
+                     </div>
+                     <div class="comments__text">Все гармата-ракета, роблять сервіс і ТО якісно, уважно та
+                        відповідально, чітко-в ті терміни, які сказали (часто в той же день і забирав з ремки вів) Все
+                        гармата-ракета, роблять сервіс і ТО якісно, уважно та відповідально, чітк</div>
+                     <div class="comments__author">John Carter</div>
+                  </div>
+                  <div class="comments__comment swiper-slide">
+                     <div class="comments__rate">
+                        <img src="img/Rating.png" alt="">
+                     </div>
+                     <div class="comments__text">Все гармата-ракета, роблять сервіс і ТО якісно, уважно та
+                        відповідально, чітко-в ті терміни, які сказали (часто в той же день і забирав з ремки вів)</div>
+                     <div class="comments__author">John Carter</div>
+                  </div>
+                  <div class="comments__comment swiper-slide">
+                     <div class="comments__rate">
+                        <img src="img/Rating.png" alt="">
+                     </div>
+                     <div class="comments__text">Все гармата-ракета, роблять сервіс і ТО якісно, уважно та
+                        відповідально, чітко-в ті терміни, які сказали (часто в той же день і забирав з ремки вів)</div>
+                     <div class="comments__author">John Carter</div>
+                  </div>
+                  <div class="comments__comment swiper-slide">
+                     <div class="comments__rate">
+                        <img src="img/Rating.png" alt="">
+                     </div>
+                     <div class="comments__text">Все гармата-ракета, роблять сервіс і ТО якісно, уважно та
+                        відповідально, чітко-в ті терміни, які сказали (часто в той же день і забирав з ремки вів)</div>
+                     <div class="comments__author">John Carter</div>
+                  </div>
 
+               </div>
+               <div class="swiper-pagination"></div>
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+            </div>
+         </div>
+      </div>
+
+      <div class="contacts" id="contacts">
+         <div class="contacts__title title1">Контакти</div>
+         <form class="form" action="">
+            <div class="form__title">Зв'яжіться з нами</div>
+            <div class="form__subtitle">Ми хочемо почути від вас</div>
+            <input type="text" placeholder="Ім'я">
+            <input type="text" placeholder="Email">
+            <textarea placeholder="Введіть своє повідомлення тут"></textarea>
+            <button type="submit" class="form__button button1">Відправити</button>
+         </form>
+         <div class="contacts__bg">
+
+         </div>
+
+         <div class="contacts__contact">
+            <div class="contacts__wrapper container">
+               <div class="contacts__address">
+                  <p>Завітайте до нас</p>
+                  <span>58 Middle Point Rd</span>
+                  <span>San Francisco, 94124</span>
+               </div>
+               <div class="contacts__tel">
+                  <p>Зв'яжіться з нами</p>
+                  <span>(123) 456 - 789</span>
+                  <span>(123) 456 - 789</span>
+                  <span>contact@company.com</span>
+               </div>
             </div>
 
-         </section>
-      </main>
+         </div>
 
+      </div>
       <footer class="footer">
          <div class="footer__wrapper container">
             <div class="footer__logo">
@@ -739,10 +724,10 @@
                <a href=""><img class='footer__link' src="img/l.jpg" alt=""></a>
             </div>
          </div>
-   
+   </div>
    <span class="footer__rights">Copyright © 2023 BRIX Templates | All Rights Reserved</span>
    </footer>
-   <!-- //</div> -->
+   </div>
 
    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
    <script src="js/js.js"></script>
