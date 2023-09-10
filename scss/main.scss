@@ -507,10 +507,19 @@ body{
 		display: flex;
 		gap: 2rem;
 	}
-	&__link{
-		&::hover{
-			filter: hue-rotate(120deg);
+	&__icon{
+		border-radius: 5px;
+		background: #fff;
+		transition: 0.6s;
+		max-width: 36px;
+		&:hover{
+			background:#539833;
+			filter: invert(100%) hue-rotate(170deg);
+			transition: 0.6s;
 		}
+	}
+	&__link{
+		
 	}
 	&__links {
 		display: flex;
